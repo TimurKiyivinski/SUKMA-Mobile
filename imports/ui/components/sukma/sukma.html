@@ -1,3 +1,32 @@
-<div layout="row">
-    <p>asd</p>
+<div layout="row" layout-wrap="horizontal">
+    <md-card ng-repeat="i in [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14]" flex="auto">
+        <md-card-title>
+            <md-card-title-text>
+                <span class="md-headline">Card with image</span>
+                <span class="md-subhead">Extra Large</span>
+            </md-card-title-text>
+        </md-card-title>
+        <md-card-content layout="row" layout-align="space-between">
+            <div class="md-media-xl card-media"></div>
+            <md-card-actions layout="column">
+                <md-button class="md-icon-button" aria-label="Favorite">
+                    <md-icon md-svg-icon="img/icons/favorite.svg"></md-icon>
+                </md-button>
+                <md-button class="md-icon-button" aria-label="Settings">
+                    <md-icon md-svg-icon="img/icons/menu.svg"></md-icon>
+                </md-button>
+                <md-button class="md-icon-button" aria-label="Share">
+                    <md-icon md-svg-icon="img/icons/share-arrow.svg"></md-icon>
+                </md-button>
+            </md-card-actions>
+        </md-card-content>
+    </md-card>
+    <!-- Bottom right fab -->
+    <md-fab-speed-dial class="amd-fab-bottom-right" md-open="demo.isOpen" md-direction="{{demo.selectedDirection}}" ng-class="demo.selectedMode">
+        <md-fab-trigger>
+            <md-button class="md-fab md-accent md-raised" aria-label="Use Android">
+                <ng-md-icon icon="camera" class="ng-md-icon-fab" size="44"></ng-md-icon>
+            </md-button>
+        </md-fab-trigger>
+    </md-fab-speed-dial>
 </div>

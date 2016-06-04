@@ -1,6 +1,4 @@
 import angular from 'angular';
-import angularMaterial from 'angular-material';
-import angularMeteor from 'angular-meteor';
 import { Meteor } from 'meteor/meteor';
 import { Photo } from '../../../api/photos.js';
 
@@ -30,15 +28,7 @@ class SUKMAController {
     //TODO: Add CRUD stubs
 }
 
-export default angular.module('sukma', [
-    angularMaterial,
-    angularMeteor
-])
-.config(function($mdThemingProvider){
-    $mdThemingProvider.theme('default')
-        .primaryPalette('teal')
-        .accentPalette('lime');
-})
+export default angular.module('sukma', [])
 .component('sukma', {
     templateUrl: 'imports/ui/components/sukma/sukma.html',
     controller: ['$scope', SUKMAController]

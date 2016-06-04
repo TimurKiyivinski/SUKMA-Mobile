@@ -1,1 +1,19 @@
 /* CSS declarations go here */
+.ng-md-icon {
+    fill: white;
+}
+
+.ng-md-icon-fab {
+    fill: white;
+    display: block;
+    width: 2.8rem;
+    height: 2.8rem;
+}
+
+.amd-fab-bottom-right {
+    top: auto;
+    right: 20px;
+    bottom: 20px;
+    left: auto;
+    position: fixed;
+}

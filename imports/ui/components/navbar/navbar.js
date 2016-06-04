@@ -1,6 +1,4 @@
 import angular from 'angular';
-import angularMaterial from 'angular-material';
-import angularMeteor from 'angular-meteor';
 import { Meteor } from 'meteor/meteor';
 
 import template from './navbar.html';
@@ -8,9 +6,6 @@ import template from './navbar.html';
 class NavController {
     constructor($scope) {
         $scope.viewModel(this)
-        $scope.primary = 'purple'
-        $scope.accent = 'green'
-        $scope.isPrimary = true
 
         this.helpers({
             currentUser() {
@@ -20,10 +15,7 @@ class NavController {
     }
 }
 
-export default angular.module('navbar', [
-    angularMaterial,
-    angularMeteor
-])
+export default angular.module('navbar', [])
 .component('navbar', {
     templateUrl: 'imports/ui/components/navbar/navbar.html',
     controller: ['$scope', NavController]
