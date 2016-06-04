@@ -2,7 +2,7 @@ import angular from 'angular';
 import angularMaterial from 'angular-material';
 import angularMeteor from 'angular-meteor';
 import { Meteor } from 'meteor/meteor';
-import { Photo } from '../../api/photos.js';
+import { Photo } from '../../../api/photos.js';
 
 import template from './sukma.html';
 
@@ -36,10 +36,10 @@ export default angular.module('sukma', [
 ])
 .config(function($mdThemingProvider){
     $mdThemingProvider.theme('default')
-        .primaryPalette('pink')
-        .accentPalette('orange');
+        .primaryPalette('teal')
+        .accentPalette('lime');
 })
 .component('sukma', {
-    templateUrl: 'imports/components/sukma/sukma.html',
+    templateUrl: 'imports/ui/components/sukma/sukma.html',
     controller: ['$scope', SUKMAController]
 });
