@@ -1,5 +1,5 @@
 {
-  "name": "SUKMA-Media",
+  "name": "SUKMA-Mobile",
   "private": true,
   "scripts": {
     "start": "meteor run"

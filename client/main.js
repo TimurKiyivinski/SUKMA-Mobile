@@ -7,7 +7,7 @@ import navbar from '../imports/ui/components/navbar/navbar';
 import sukma from '../imports/ui/components/sukma/sukma';
 import '../imports/startup/accounts-config.js'
 
-angular.module('SUKMA-Media', [
+angular.module('SUKMA-Mobile', [
     angularMaterial,
     angularMaterialIcons,
     angularMeteor,
@@ -22,7 +22,7 @@ angular.module('SUKMA-Media', [
 })
 
 function onReady() {
-    angular.bootstrap(document, ['SUKMA-Media']);
+    angular.bootstrap(document, ['SUKMA-Mobile']);
 }
 
 if (Meteor.isCordova) {
